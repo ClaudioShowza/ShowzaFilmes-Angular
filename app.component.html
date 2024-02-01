@@ -1,0 +1,17 @@
+<div class="example-container">
+  <form class="example-form">
+    <label>Escolha sua categoria de filme</label>
+    <input matInput placeholder="Ex. Ação, Romance..."
+           name="categoria"
+           [(ngModel)]="categoriaSelecionada"
+           (ngModelChange)="atualizarCategoriaSelecionada($event)">
+  </form>
+  <ul>
+    <li *ngFor="let filme of filmesFiltrados">
+      {{filme.titulo}} ({{filme.categoria}})
+      <img [src]="filme.urlImagem" alt="{{filme.titulo}}">
+    </li>
+  </ul>
+
+</div>
+<router-outlet></router-outlet>

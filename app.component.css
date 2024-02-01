@@ -1,0 +1,82 @@
+/* Estilização do container principal */
+.example-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.example-container:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização do formulário */
+.example-form {
+  margin-bottom: 30px;
+}
+
+.example-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.example-form input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização da lista de filmes */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  border: 1px solid #eaeaea;
+  transition: all 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #e9e9e9;
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização das imagens dos filmes */
+ul li img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Estilização dos títulos dos filmes */
+ul li h3 {
+  margin: 10px 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .example-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
